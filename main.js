@@ -1,11 +1,6 @@
-const openbtn = document.getElementById("openbtn");
-const closebtn = document.getElementById("closebtn");
-const modal = document.getElementById("modal");
+const btn = document.getElementById("btn");
 
-openbtn.addEventListener("click", ()=>{
-    modal.style.display = "block";
-})
-
-closebtn.addEventListener("click", ()=>{
-    modal.style.display = "none";
+btn.addEventListener("click", ()=>{
+    document.body.classList.toggle("dark");
+    btn.textContent = "☀️";
 })
